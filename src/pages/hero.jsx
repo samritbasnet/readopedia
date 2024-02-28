@@ -23,6 +23,10 @@ const Hero = () => {
           alt='/'
         />
       </div>
+      <div>
+      <h1 className="text-4xl font-bold text-gray-900 mt-8">Popular Book this week</h1>
+
+      </div>
     </div>
   );
 };
