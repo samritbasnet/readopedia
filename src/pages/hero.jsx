@@ -21,74 +21,77 @@ const Hero = () => {
           alt='Hero Image'
         />
       </div>
-      <div className='text-center'> 
-        <h1 className="  text-4xl font-bold text-brown-300 mt-8">Latest Addition</h1>
+      <div className='flex justify-between items-center mt-4'> 
+        <h1 className="text-4xl font-bold text-brown-300">Latest Addition</h1>
+        <button className="bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded focus:outline-none focus:ring focus:ring-blue-300">
+          View All
+        </button>
       </div>
 
       {/* Book Cards Container */}
-      <div className="flex justify-between mt-8">
+      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 mt-8">
         {/* First Book Card */}
-        <div className="w-full max-w-[400px] bg-black border border-white-200 rounded-lg shadow dark:bg-gray-400 dark:border-gray-300">
+        <div className="bg-white border border-gray-200 rounded-lg shadow-lg overflow-hidden p-4">
           <a href="#">
-            <img className="w-full h-auto rounded-t-xl" src="https://marketplace.canva.com/EAD7WmQzMUQ/2/0/1003w/canva-moon-photo-thriller-mystery-book-cover-QE7uv7YSwDQ.jpg" alt="product image" />
+            <img className="w-full h-auto rounded-lg" src="https://marketplace.canva.com/EAD7WmQzMUQ/2/0/1003w/canva-moon-photo-thriller-mystery-book-cover-QE7uv7YSwDQ.jpg" alt="product image" />
           </a>
-          <div className="px-5 pb-3">
+          <div className="p-2">
             <a href="#">
-              <h5 className="text-xl font-semibold tracking-tight text-black-900 dark:text-black">Breaking the Oath</h5>
+              <h5 className="text-xl font-semibold tracking-tight text-gray-900">Breaking the Oath</h5>
             </a>
-            <div className="flex items-center mt-2.5 mb-3">
-              <div className="flex items-center space-x-1 rtl:space-x-reverse">
+            <div className="flex items-center mt-2 mb-1">
+              <div className="flex items-center space-x-1">
                 ★★★★
               </div>
-              <span className="bg-blue-100 text-blue-800 text-xs font-semibold px-2.5 py-0.5 rounded dark:bg-blue-200 dark:text-blue-800 ms-3">4.0</span>
+              <span className="bg-blue-100 text-blue-800 text-xs font-semibold px-2.5 py-0.5 rounded ml-1">4.0</span>
             </div>
             <div className="flex items-center justify-between">
-              <span className="text-3xl font-bold text-gray-900 dark:text-white">$39</span>
-              <a href="#" className="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Add to cart</a>
+              <span className="text-xl font-bold text-gray-900">$39</span>
+              <a href="#" className="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-3 py-1 text-center">Add to cart</a>
             </div>
           </div>
         </div>
 
         {/* Second Book Card */}
-        <div className="w-full max-w-[400px] bg-black border border-white-200 rounded-lg shadow dark:bg-gray-400 dark:border-gray-300">
+        <div className="bg-white border border-gray-200 rounded-lg shadow-lg overflow-hidden p-4">
           <a href="#">
-            <img className="w-full h-auto rounded-t-xl" src="https://www.designforwriters.com/wp-content/uploads/2017/10/design-for-writers-book-cover-tf-2-a-million-to-one.jpg" alt="product image" />
+            <img className="w-full h-auto rounded-lg" src="https://www.designforwriters.com/wp-content/uploads/2017/10/design-for-writers-book-cover-tf-2-a-million-to-one.jpg" alt="product image" />
           </a>
-          <div className="px-5 pb-3">
+          <div className="p-2">
             <a href="#">
-              <h5 className="text-xl font-semibold tracking-tight text-black-900 dark:text-black">Breaking the Oath</h5>
+              <h5 className="text-xl font-semibold tracking-tight text-gray-900">Million to One</h5>
             </a>
-            <div className="flex items-center mt-2.5 mb-3">
-              <div className="flex items-center space-x-1 rtl:space-x-reverse">
+            <div className="flex items-center mt-2 mb-1">
+              <div className="flex items-center space-x-1">
                 ★★★
               </div>
-              <span className="bg-blue-100 text-blue-800 text-xs font-semibold px-2.5 py-0.5 rounded dark:bg-blue-200 dark:text-blue-800 ms-3">4.0</span>
+              <span className="bg-blue-100 text-blue-800 text-xs font-semibold px-2.5 py-0.5 rounded ml-1">3.0</span>
             </div>
             <div className="flex items-center justify-between">
-              <span className="text-3xl font-bold text-gray-900 dark:text-white">$59</span>
-              <a href="#" className="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Add to cart</a>
+              <span className="text-xl font-bold text-gray-900">$59</span>
+              <a href="#" className="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-3 py-1 text-center">Add to cart</a>
             </div>
           </div>
         </div>
 
         {/* Third Book */}
-        <div className="w-full max-w-[400px] bg-black border border-white-200 rounded-lg shadow dark:bg-gray-400 dark:border-gray-300">
+        <div className="bg-white border border-gray-200 rounded-lg shadow-lg overflow-hidden p-4">
           <a href="#">
-            <img className="w-full h-auto rounded-t-xl" src="https://www.designforwriters.com/wp-content/uploads/2017/10/design-for-writers-book-cover-tf-2-a-million-to-one.jpg" alt="product image" />
+            <img className="w-full h-auto rounded-lg" src="https://payload.cargocollective.com/1/2/88505/1542390/Ben%20Jones-%201984.jpg" alt="product image" />
           </a>
-          <div className="px-5 pb-3">
+          <div className="p-2">
             <a href="#">
-              <h5 className="text-xl font-semibold tracking-tight text-black-900 dark:text-black">Breaking the Oath</h5>
+              <h5 className="text-xl font-semibold tracking-tight text-gray-900">1984</h5>
             </a>
-            <div className="flex items-center mt-2.5 mb-3">
-              <div className="flex items-center space-x-1 rtl:space-x-reverse">
-                ★★★
+            <div className="flex items-center mt-2 mb-1">
+              <div className="flex items-center space-x-1">
+                ★★★★★
               </div>
-              <span className="bg-blue-100 text-blue-800 text-xs font-semibold px-2.5 py-0.5 rounded dark:bg-blue-200 dark:text-blue-800 ms-3">4.0</span>
+              <span className="bg-blue-100 text-blue-800 text-xs font-semibold px-2.5 py-0.5 rounded ml-1">5.0</span>
             </div>
             <div className="flex items-center justify-between">
-              <span className="text-3xl font-bold text-gray-900 dark:text-white">$21</span>
-              <a href="#" className="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Add to cart</a>
+              <span className="text-xl font-bold text-gray-900">$21</span>
+              <a href="#" className="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-3 py-1 text-center">Add to cart</a>
             </div>
           </div>
         </div>
