@@ -27,9 +27,10 @@ function Navbar() {
         </div>
         <ul className="flex space-x-4">
           <li><a href="/" className="text-white hover:text-red-500">Home</a></li>
+          <li><a href="/bestseller" className="text-white hover:text-red-500">BestSeller</a></li>
           <li><a href="/categories" className="text-white hover:text-red-500">Categories</a></li>
-          <li><a href="/about" className="text-white hover:text-red-500">Blog</a></li>
-          <li><a href="/about" className="text-white hover:text-red-500">About</a></li>
+          <li><a href="/Blog" className="text-white hover:text-red-500">Blog</a></li>
+          
           {isLoggedIn ? (
             <li className="relative">
               <img src={userLogo} alt="User Logo" className="h-8 w-8 rounded-full cursor-pointer" />
