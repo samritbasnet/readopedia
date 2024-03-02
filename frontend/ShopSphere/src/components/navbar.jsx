@@ -1,5 +1,3 @@
-// Navbar.js
-
 import React from 'react';
 
 const Navbar = () => {
@@ -27,7 +25,7 @@ const Navbar = () => {
             <input
               type="text"
               placeholder="Search..."
-              className="px-4 py-2 w-full rounded-md border-gray-300 focus:outline-none focus:ring-2 focus:ring-indigo-400"
+              className="px-2 py-1 w-48 rounded-md border-gray-300 focus:outline-none focus:ring-2 focus:ring-indigo-400"
             />
           </div>
 
